@@ -1,0 +1,2 @@
+    first = input()
+    last = input()
