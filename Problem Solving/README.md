@@ -7,7 +7,8 @@ Welcome to my problem-solving repository! This is where I document my coding jou
 - **LeetCode**: Solutions to LeetCode problems, organized by difficulty and topic
 - **Codeforces**: Competitive programming solutions from Codeforces contests
 - **HackerRank**: Solutions to HackerRank challenges
-- **Training**: Practice problems and learning materials
+- **Solve Problem With Java**: solutions example with programming java
+- **Solve Problem With Python**: solutions example with programming python
 
 ## 🎯 Purpose
 
