@@ -1,7 +1,7 @@
 class Solution {
 public:
     ListNode* insertionSortList(ListNode* head) {
-        ListNode* newHead = NULL;//initializing the newHead for our sorted linkedlist
+        ListNode* newHead = NULL;
         while(head){
             ListNode* temp = head;
             head = head->next;
