@@ -1,3 +1,7 @@
+#include <iostream>
+#include <string>
+#include <stack>
+using namespace std;
 class Solution {
 public:
     bool isValid(string s) {
@@ -18,3 +22,16 @@ public:
             return false;
     }
 };
+
+int main() {
+    Solution solution;
+    string input;
+
+    cout << "Enter a string of parentheses: ";
+    cin >> input;
+
+    bool result = solution.isValid(input);
+    cout << "Is valid: " << (result ? "true" : "false") << endl;
+
+    return 0;
+}

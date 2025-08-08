@@ -1,3 +1,6 @@
+#include <iostream>
+#include <string>
+using namespace std;
 class Solution {
 public:
     int lengthOfLastWord(string s) {
@@ -17,3 +20,16 @@ public:
         return temp - index;
     }
 };
+
+int main() {
+    Solution solution;
+    string input;
+
+    cout << "Enter a string: ";
+    getline(cin, input);
+
+    int result = solution.lengthOfLastWord(input);
+    cout << "Length of the last word: " << result << endl;
+
+    return 0;
+}

@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -15,3 +18,16 @@ public:
         return (x == revHalf || x == revHalf / 10);
     }
 };
+
+int main() {
+    Solution solution;
+    int input;
+
+    cout << "Enter a number: ";
+    cin >> input;
+
+    bool result = solution.isPalindrome(input);
+    cout << "Is palindrome: " << (result ? "true" : "false") << endl;
+
+    return 0;
+}

@@ -26,3 +26,36 @@ class Solution:
                 temp.next = curr
         
         return sorted_head
+
+def printList(head):
+    current = head
+    while current:
+        print(current.val, end=" -> ")
+        current = current.next
+    print("None")
+
+def main():
+    solution = Solution()
+    
+    values = list(map(int, input("Enter list values separated by spaces: ").split()))
+    
+    if not values:
+        print("Empty list")
+        return
+    
+    head = ListNode(values[0])
+    current = head
+    for val in values[1:]:
+        current.next = ListNode(val)
+        current = current.next
+    
+    print("Original list:")
+    printList(head)
+    
+    sorted_head = solution.insertionSortList(head)
+    
+    print("Sorted list:")
+    printList(sorted_head)
+
+if __name__ == "__main__":
+    main()
