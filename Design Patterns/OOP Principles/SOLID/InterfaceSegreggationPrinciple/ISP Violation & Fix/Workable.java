@@ -1,0 +1,5 @@
+
+interface Workable {
+
+    void work();
+}
