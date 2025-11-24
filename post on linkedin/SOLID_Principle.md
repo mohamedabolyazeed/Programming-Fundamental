@@ -1,4 +1,4 @@
-# 💡 SOLID Principles — Detailed Java Guide
+# 💡 SOLID Principles
 
 SOLID Principles هي خمس قواعد أساسية في **OOP** بتخلي الكود:
 
