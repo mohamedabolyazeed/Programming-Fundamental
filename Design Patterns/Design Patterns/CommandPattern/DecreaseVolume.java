@@ -1,18 +1,12 @@
+public class DecreaseVolume implements Command {
+  private Television TV;
 
-package commandpattern;
+  public DecreaseVolume(Television TV) {
+    this.TV = TV;
+  }
 
-
-public class DecreaseVolume implements Command{
-    private Television TV;
-    
-    public DecreaseVolume (Television TV){
-        this.TV = TV;
-    }
-
-    @Override
-    public void execute() {
-        TV.decreasevolume();
-    }
+  @Override
+  public void execute() {
+    TV.decreasevolume();
+  }
 }
-
-

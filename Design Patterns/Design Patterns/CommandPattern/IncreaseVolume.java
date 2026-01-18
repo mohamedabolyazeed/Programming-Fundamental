@@ -1,17 +1,13 @@
+public class IncreaseVolume implements Command {
 
-package commandpattern;
+  private Television TV;
 
-public class IncreaseVolume implements Command{
-    
-    private Television TV;
-    
-    public IncreaseVolume (Television TV){
-        this.TV = TV;
-    }
+  public IncreaseVolume(Television TV) {
+    this.TV = TV;
+  }
 
-    @Override
-    public void execute() {
-        TV.increasevolume();
-    }
+  @Override
+  public void execute() {
+    TV.increasevolume();
+  }
 }
-

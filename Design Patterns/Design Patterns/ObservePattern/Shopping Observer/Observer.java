@@ -1,10 +1,3 @@
-
-package observer;
-
 public interface Observer {
-    void update(Product product);
+  void update(Product product);
 }
-
-
-
-

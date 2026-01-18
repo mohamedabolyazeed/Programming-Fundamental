@@ -1,23 +1,18 @@
-
-package commandpattern;
-
-
 public class RemoteControl {
 
-    private Command[] Command;
+  private Command[] Command;
 
-    public RemoteControl() {
-        Command = new Command[4];
+  public RemoteControl() {
+    Command = new Command[4];
 
-    }
+  }
 
-    public void addcommand(int slotid, Command Command) {
-        this.Command[slotid] = Command;
+  public void addcommand(int slotid, Command Command) {
+    this.Command[slotid] = Command;
 
-    }
-    public void ButtonPressed(int slot) {
-        Command[slot].execute();
-    }
+  }
+
+  public void ButtonPressed(int slot) {
+    Command[slot].execute();
+  }
 }
-
-

@@ -1,8 +1,7 @@
-
-package observepattern;
-
 public interface Subject {
-    public void register(Observer observer);
-    public void unregister (Observer observer);
-    public void notifyallObservers();
+  public void register(Observer observer);
+
+  public void unregister(Observer observer);
+
+  public void notifyallObservers();
 }

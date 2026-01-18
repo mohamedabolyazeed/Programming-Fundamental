@@ -1,18 +1,14 @@
+public class TurnOnTelevision implements Command {
 
-package commandpattern;
+  private Television TV;
 
+  public TurnOnTelevision(Television tv) {
+    this.TV = tv;
+  }
 
-public class TurnOnTelevision implements Command{
+  @Override
+  public void execute() {
+    this.TV.turnOn();
+  }
 
-    private Television TV;
-    public TurnOnTelevision (Television tv){
-        this.TV = tv;
-    }
-
-    @Override
-    public void execute() {
-        this.TV.turnOn();
-    }
-    
 }
-

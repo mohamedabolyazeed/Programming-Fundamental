@@ -1,39 +1,33 @@
+public class Circle implements Shape {
+  private String type;
+  private String color;
+  private int radius;
 
-package prototypepattern;
+  public Circle(String color, int radius) {
+    this.type = "Circle";
+    this.color = color;
+    this.radius = radius;
+  }
 
-public class Circle implements Shape{
-    private String type;
-    private String color;
-    private int radius;
+  private Circle(Circle source) {
+    this.type = source.type;
+    this.color = source.color;
+    this.radius = source.radius;
+  }
 
-    public Circle(String color, int radius) {
-        this.type = "Circle";
-        this.color = color;
-        this.radius = radius;
-    }
+  @Override
+  public Shape clone() {
+    return new Circle(this);
+  }
 
-    private Circle(Circle source) {
-        this.type = source.type;
-        this.color = source.color;
-        this.radius = source.radius;
-    }
+  @Override
+  public String getType() {
+    return type;
+  }
 
-    @Override
-    public Shape clone() {
-        return new Circle(this);
-    }
-
-    @Override
-    public String getType() {
-        return type;
-    }
-
-    @Override
-    public String toString() {
-        return "Circle{" + "type='" + type + '\'' + ", color='" 
-                + color + '\'' + ", radius=" + radius + '}';
-    }
+  @Override
+  public String toString() {
+    return "Circle{" + "type='" + type + '\'' + ", color='"
+        + color + '\'' + ", radius=" + radius + '}';
+  }
 }
-
-
-
