@@ -165,7 +165,7 @@ This project is for **educational purposes**. You are free to:
 
 ## 👤 Author
 
-**Mohamed Abu Al‑Yazid**  
+**Mohamed Abolyazeed**  
 🎓 Cyber Security & Computer Science Student  
 🔗 [GitHub Profile](https://github.com/mohamedabolyazeed)
 

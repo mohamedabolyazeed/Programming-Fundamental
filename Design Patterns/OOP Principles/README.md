@@ -336,7 +336,7 @@ This project is for **educational purposes**. Feel free to use, modify, and lear
 
 ## 👨‍💻 Author
 
-**Mohamed Abu Al‑Yazid**  
+**Mohamed Abolyazeed**  
 Cyber Security & Computer Science Student  
 🔗 [GitHub Profile](https://github.com/mohamedabolyazeed)
 
