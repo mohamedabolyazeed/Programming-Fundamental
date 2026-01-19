@@ -1,5 +1,3 @@
-package proxydesignpatterns;
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,6 +8,7 @@ public class ProxyDesignPatterns {
     InternetSerivceProvider ISP = new InternetProxy();
     for (String site : Sites) {
       System.out.println(ISP.serveSite(site));
+      System.out.println("--------------------------------");
     }
   }
 }

@@ -30,7 +30,7 @@ public class Course implements Subject {
 
   // true
   public void setAvaibility(boolean avaiable) {
-    availability = name + (avaiable ? "Avaiable" : "Not Avaiable");
+    availability = name + (avaiable ? " Avaiable" : " Not Avaiable");
     notifyallObservers();
   }
 

@@ -7,6 +7,6 @@ public class Student implements Observer {
 
   @Override
   public void update(String message) {
-    System.out.println(name + "has a new notification : " + message);
+    System.out.println(name + " has a new notification : " + message);
   }
 }

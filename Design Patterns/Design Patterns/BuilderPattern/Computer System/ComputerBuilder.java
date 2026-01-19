@@ -1,8 +1,8 @@
 public class ComputerBuilder {
-  private String cpu = "Default CPU";
-  private String ram = "8GB";
-  private String storage = "256GB SSD";
-  private String gpu = "Integrated Graphics";
+  private String cpu;
+  private String ram;
+  private String storage;
+  private String gpu;
 
   public ComputerBuilder Cpu(String cpu) {
     this.cpu = cpu;

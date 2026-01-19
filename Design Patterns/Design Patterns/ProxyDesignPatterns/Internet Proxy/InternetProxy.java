@@ -1,11 +1,14 @@
-package proxydesignpatterns;
-
 import java.util.Arrays;
 import java.util.List;
 
 public class InternetProxy implements InternetSerivceProvider {
 
   private List<String> blockedSites = Arrays.asList("twitter", "youtube", "facebook");
+
+  // This method is used to log the internet request time and url
+  private void internetlog(String url) {
+    System.out.println(url + " is requested");
+  }
 
   @Override
   public String serveSite(String url) {
@@ -14,11 +17,6 @@ public class InternetProxy implements InternetSerivceProvider {
       return "This website is blocked!!";
     }
     return new We().serveSite(url);
-    // throw new UnsupportedOperationException("Not supported yet."); //To change
-    // body of generated methods, choose Tools | Templates.
-  }
 
-  private void internetlog(String url) {
-    System.out.println("[" + System.currentTimeMillis() + "]" + "->" + url + " is requested \n");
   }
 }
