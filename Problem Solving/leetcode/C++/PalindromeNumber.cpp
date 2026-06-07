@@ -1,33 +1,18 @@
 #include <iostream>
+# include <string>
 using namespace std;
 
 class Solution {
 public:
     bool isPalindrome(int x) {
-        
-        if (x < 0 || (x % 10 == 0 && x != 0)) return false;
-
-        int revHalf = 0;
-        while (x > revHalf) {
-            int digit = x % 10;
-            revHalf = revHalf * 10 + digit;
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        int revertedNumber = 0;
+        while (x > revertedNumber) {
+            revertedNumber = revertedNumber * 10 + x % 10;
             x /= 10;
         }
-
-        
-        return (x == revHalf || x == revHalf / 10);
+        return x == revertedNumber || x == revertedNumber / 10;
     }
 };
-
-int main() {
-    Solution solution;
-    int input;
-
-    cout << "Enter a number: ";
-    cin >> input;
-
-    bool result = solution.isPalindrome(input);
-    cout << "Is palindrome: " << (result ? "true" : "false") << endl;
-
-    return 0;
-}
